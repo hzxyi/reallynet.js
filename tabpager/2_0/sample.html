@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>无标题文档</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+  <div class="idTabPager" id="idTabPager">
+    <ul class="tab-title">
+      <li>tab1</li>
+      <li>tab2</li>
+      <li>tab3</li>
+    </ul>
+    <div class='tab-page'>
+      <div>Group1Pager1</div>
+      <div>Group1Pager2</div>
+      <div>Group1Pager3</div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var tabServ = new tabpager();
+      tabServ.create('idTabPager');
+
+      //      var tabServ = new tabpager();
+      //      alert('');
+      //      tabpager.create('idTabPager');
+      //      alert('2');
+    });
+
+    /* css 设置　*/
+    //tabServ.strCssTabOn = "lable_on";
+    //tabServ.strCssTabOff = "lable_off";
+    //tabServ.strCssTabOn4Left = "lable_on_left";
+    //tabServ.strCssTabOff4Left = "lable_off_left";
+    //tabServ.strCssTabOn4Right = "lable_on";
+    //tabServ.strCssTabOff4Right = "lable_off";
+
+    //tabServ.shiftTab("Group1Tab", 2, 3)
+    //tabServ.shiftTabPager("Group1Tab","Group1Pager", 2, 3)
+  </script>
+
+</body>
+</html>

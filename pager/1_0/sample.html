@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="idPagerbar"></div>
+<script type="text/javascript">
+var strPagerBarCode = "<a href=\"$FirstPager$\"><img src=\"/skins/cn/images/home1.gif\" width=\"36\" height=\"19\" border=\"0\" align=\"absmiddle\"/></a> <a href=\"PrevPager$\"><img src=\"/skins/cn/images/pageup.gif\" width=\"36\" height=\"19\" hspace=\"6\" border=\"0\" align=\"absmiddle\"/></a>&nbsp;<a href=\"$NextPager$\"><img src=\"/skins/cn/images/pagedown.gif\" width=\"36\" height=\"19\" border=\"0\" align=\"absmiddle\"/></a> <a href=\"$LastPager$\"><img src=\"/skins/cn/images/end.gif\" width=\"36\" height=\"19\" hspace=\"6\" border=\"0\" align=\"absmiddle\"/></a>&nbsp;&nbsp;共<b>$PageIndex$</b>条记录&nbsp;每页$PageSize$条记录　　　<span class=\"go\">转到$SelectPager$第页</span>";
+
+var pageServ = new pager();
+//.create(iMode, strId, iPageIndex, iPageSize, iRecordCount, strUrl)
+pageServ.strPagerTemplate = strPagerBarCode;
+pageServ.create(3, "idPagerbar", 23, 3, 152, "?pi=$pi$");
+</script>
+</body>
+</html>

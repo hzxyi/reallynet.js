@@ -1,0 +1,128 @@
+@charset "utf-8";
+#idListBlock{
+/*	overflow: auto; */
+}
+
+#idListBlock{
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	overflow: auto;
+	background-color: #EEEEEE;
+	font-size: 12px;
+	font-family: "Courier New", "宋体";
+}
+
+#idListBlock .table{
+	clear: both;
+}
+
+/* TableHeader */
+#idListBlock table tr.TableHeader {
+	color: #000000;
+	font-family: "Courier New", "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+	height: 23px;
+	background-image: url(../images/mlist_bg.gif);
+	background-repeat: repeat-x;
+}
+
+#idListBlock table tr.TableHeader th{
+	font-weight: bold;
+	color: #333333;
+	height: 23px;
+	background-image: url(../images/mlist_bg.gif);
+	background-repeat: repeat-x;
+}
+
+#idListBlock table .TableHeader th.left{
+	text-align: left;
+}
+
+#idListBlock table .TableHeader th.center{
+	text-align: center;
+}
+
+#idListBlock table .TableHeader th.right{
+	text-align: right;
+}
+
+/* TableFooter */
+#idListBlock table tr.TableFooter {
+	background-color: #FFFFFF;
+	font-family: "Courier New", "宋体";
+	font-size: 12px;
+}
+
+/* TableRow */
+#idListBlock table tr.TableRow {
+	background-color: #FFFFFF;
+	font-family: "Courier New", "宋体";
+	font-size: 12px;
+	height: 24px;
+}
+
+#idListBlock table tr.TableRow td {
+	height: 24px;
+}
+
+#idListBlock table tr.TableRowMouseOver {
+	background-color: #F6F6F6;
+	font-family: "Courier New", "宋体";
+	font-size: 12px;
+	height: 24px;
+	cursor: pointer;
+}
+
+#idListBlock table tr.TableRowSelected {
+	background-color: #F6F6F6;
+	border: 1px solid #EEEEEE;
+	font-family: "Courier New", "宋体";
+	font-size: 12px;
+	height: 24px;
+}
+
+/* alink */
+#idListBlock table tr .aDelete{
+/*	text-indent: 16px;*/
+/*	float: left;*/
+/*	margin-left: 4px;*/
+/*	background: url(../images/sbtn_del.gif) no-repeat;*/
+}
+
+#idListBlock table tr .aModify{
+/*	text-indent: 16px;*/
+/*	float: left;*/
+/*	margin-left: 4px;*/
+/*	background: url(../images/sbtn_modify.gif) no-repeat;*/
+}
+
+#idListBlock table tr a.action {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #149116;
+}
+
+#idListBlock table tr a.aRight {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #149116;
+}
+
+#idListBlock table tr a.aError {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #996600;
+}
+
+/*
+#idListBlock table tr.TablePages {
+	background-color: #F6F6F6;
+	color: #000000;
+	font-family: "Courier New", "宋体";
+	font-size: 12px;
+}
+*/

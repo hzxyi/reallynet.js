@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* 分页 */
+.pagerBar .showPager{
+	margin: 0 0 10px 0;
+	padding: 4px 0px 0 0px;
+	height: 24px;
+	line-height: 24px;
+	background: url(../../image/man/cat_fot_bg.gif) repeat-x left top;
+	text-align: right;
+	clear: both;
+	float: left;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagerBar .showPager .pager{
+}
+
+.pagerBar .showPager .pager a.num{
+	border: 1px solid #D1D1D1;
+	padding: 0px 4px;
+	margin: 0px 2px;
+	background: #fff;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.pagerBar .showPager .pager a.num:link,.pagerBar .showPager .pager a.num:visited{
+	border: 1px solid #D1D1D1;
+	background: #fff;
+	color: #666;
+	text-decoration: none;
+}
+
+.pagerBar .showPager .pager a.num:link,.pagerBar .showPager .pager a.num:visited{
+}
+
+.pagerBar .showPager .pager a.num:hover,.pagerBar .showPager .pager a.num:active{
+	background: #0e6284;
+	color: #fff;
+/*	font-weight: bold;*/
+	text-decoration: none;
+}
+
+.pagerBar .showPager .pager a.num:hover,.pagerBar .showPager .pager a.num:active{
+}
+
+.pagerBar .showPager .pager a.num2{
+	border: 1px solid #D1D1D1;
+	padding: 0px 4px;
+	margin: 0px 2px;
+	background: #0e6284;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.pagerBar .showPager .pager a.tu{
+	border: 1px solid #D1D1D1;
+	padding: 0px 4px 0px 4px;
+	margin: 0px 2px;
+	background: #fff;
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.pagerBar .showPager .pager a.tu:link,.pagerBar .showPager .pager a.tu:visited{
+	border: 1px solid #D1D1D1;
+	background: #fff;
+	color: #666;
+	text-decoration: none;
+}
+
+.pagerBar .showPager .pager a.tu:hover,.pagerBar .showPager .pager a.tu:active{
+	background: #0e6284;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.pagerBar .showPager .pager input.bt_confirm{
+	border: 1px solid #C2DEE9;
+	background: #E1EEF4; /*	width:35px; */
+	width: 5em;
+	height: 1.7em;
+	cursor: pointer;
+}
+
+.pagerBar .showPager .pager input.text_page{
+	width: 30px;
+	height: 13px;
+	margin-top: 3px!important;
+	margin-top: 5px;
+}
+
+.pagerBar .showPager .pager ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
+
+.pagerBar .showPager .pager ul li{
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.pagerBar .showPager .pager ul li div{
+	height: 5px;
+	line-height: 5px;
+	font-size: 4px;
+	width: 5px;
+	clear: both;
+}
+
+.pagerBar .showPager .pager ul li select{
+	font-size: 9px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.pagerBar .showPager .pager ul li.select{
+	margin-top: 5px;
+	padding-top: 10px;
+}

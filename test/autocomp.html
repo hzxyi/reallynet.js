@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="../common/jQuery/1_3_2/jquery-vsdoc2.js" type="text/javascript" charset="gb2312"></script>
+
+<script type="text/javascript" src="../common/jQuery/1_3_2/jquery.js"></script>
+<script type="text/javascript" src="../plugin/jQuery/autocomplete/jquery.autocomplete.js"></script>
+<link rel="stylesheet" type="text/css" href="../plugin/jQuery/autocomplete/jquery.autocomplete.css" charset="utf-8" />
+
+</head>
+<body>
+<form id="form1" action="test.aspx">
+ <input type="text" name="KeyId" id="KeyId" style="width: 400px;" />
+ <input />
+ <br />
+ <input type="submit" name="submit" id="submit" value="提交" />
+ <table width="200" cellpadding="3" cellspacing="2">
+  <tr>
+   <th>title</th>
+   <th width="50" align="center">oper</th>
+  </tr>
+  <tr>
+   <td id="KeyId" class="title">123</td>
+   <td align="center" class="title"><a id="idDel" href="javascript:msg(this);" class="del">del</a></td>
+  </tr>
+  <tr>
+   <td id="KeyId" class="title">456</td>
+   <td align="center"><a id="idDel" href="javascript:msg(this);" class="del">del</a></td>
+  </tr>
+ </table>
+</form>
+<script type="text/javascript">
+$().ready(function() {
+
+	function formatItem(row) {
+		return "<strong>" + row[0] + "</strong>" +  "<br /><span>(" + row[1] + "</span>)";
+	}
+	function formatResult(row) {
+		return row[0].replace(/(<.+?>)/gi, '');
+	}
+	
+
+
+	$("#KeyId").autocomplete("search.aspx", {
+		width: 400,
+		matchContains: true,
+		formatItem: formatItem,
+		formatResult: formatResult,
+		selectFirst: true
+/*
+		formatItem: formatItem,
+		formatResult: formatResult
+*/
+	});
+
+	$("#KeyId").result(function(event, data, formatted) {
+		if (data)
+			$(this).parent().next().find("input").val(data[1]);
+	});
+	
+});
+
+/*
+*/
+</script>
+
+
+<script type="text/javascript">
+/*
+function msg(obj)
+{
+	alert("ok");
+}
+
+function alert2()
+{
+	var obj = $(this);
+	var aryList =  $(this).parent().parent().children(".title");
+	alert(aryList.length)
+	if (aryList.length>0)
+	{
+		var strMsg = aryList.get(0).html();
+		strMsg = "确定吗 [" + strMsg  + "]";
+		return window.confirm(strMsg);
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function init2()
+{
+	$(".del").bind("click", alert2)
+}
+init2();
+*/
+</script>
+</body>
+</html>

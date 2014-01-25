@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="../../common/global.js" charset="utf-8"></script>
+<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="idTabPager">
+ <div class="tabBar">
+  <div id="Group1Tab1" onmouseover="javascript:tabServ.shiftTabPager('Group1Tab','Group1Pager', 1, 3)">tab1</div>
+  <div id="Group1Tab2" onmouseover="javascript:tabServ.shiftTabPager('Group1Tab','Group1Pager', 2, 3)">tab2</div>
+  <div id="Group1Tab3" onmouseover="javascript:tabServ.shiftTabPager('Group1Tab','Group1Pager', 3, 3)">tab3</div>
+ </div>
+ <div id="Group1Pager1">Group1Pager1</div>
+ <div id="Group1Pager2">Group1Pager2</div>
+ <div id="Group1Pager3">Group1Pager3</div>
+</div>
+<script type="text/javascript">
+var tabServ = new tabpager();
+/* css 设置　*/
+tabServ.strCssTabOn = "lable_on";
+tabServ.strCssTabOff = "lable_off";
+tabServ.strCssTabOn4Left = "lable_on_left";
+tabServ.strCssTabOff4Left = "lable_off_left";
+tabServ.strCssTabOn4Right = "lable_on";
+tabServ.strCssTabOff4Right = "lable_off";
+
+//tabServ.shiftTab("Group1Tab", 2, 3)
+tabServ.shiftTabPager("Group1Tab","Group1Pager", 2, 3)
+</script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+*{ margin:0; padding:0; list-style:none;}
+
+body { font-size:12px; color:#555555; font-family:Arial;}
+a:link,a:visited{ color:#555555; text-decoration:none;}
+a:hover{ color:#ff8400; text-decoration:underline;}
+.clearing{ clear:both;font-size: 0px; line-height: 0; height: 0px;border-top:1px solid transparent;visibility: hidden;}
+.hackbox{clear:both;font-size: 0px; line-height: 0; height: 0px; overflow:hidden;}
+a.hover{ color:#ff8400; }
+.red{ color:#ff8400;}
+img{border-width:0;}
+
+#loader_effects_jplus{display:none;}
+
+/*      head begin     */
+/* new header 2008-03-27   url(../../../../img.alimama.cn/images/bg/new_header2.png)   */
+#header, #nav_2{width:950px;margin:0 auto;}
+#header #logo{float: left;width: 293px;height: 60px;}
+#header #logo a{display: block;	width: 291px;height: 42px;margin: 10px 0 0 1px;}
+#header #logo a span{display: none;}
+.bg-header, #top_nav_bar li a, #top_nav_bar li a span,#top_nav_bar li.down i.downi,#top_nav_bar .down_div .down_bl,#top_nav_bar .down_div .down_br,#top_nav_bar .down_div .down_up,#top_nav_bar li.new i.newi{background-image: url(../../../../img.alimama.cn/images/bg/new_header_bg2.gif);}
+
+#header #top_nav{background-repeat: no-repeat;height: 60px;}
+
+#quick_links{border-bottom: 1px solid #E0E0E0;	height: 22px;margin: 0 0 0 3px;}
+#quick_links ul{float: right;}
+#quick_links li{float: left;line-height: 16px;_line-height: 16px;padding: 0 7px;border-left: 1px solid #E0E0E0;	_font-family: simsun;margin: 4px 0 0 0;}
+
+#quick_links li a:link, #quick_links li a:visited{color: #0245DC;}
+#quick_links li a:hover{color: #ff5500;}
+#quick_links li.myalimama{margin: 3px 0 0 0;}
+
+#quick_links li.myalimama a, #quick_links li.myalimama a span, #quick_links li.myalimama a span i, #top_nav_bar li a, #top_nav_bar li a span{
+	display: block;	float: left;background-repeat: no-repeat;cursor: pointer;}
+
+#quick_links li.myalimama a span i{	background: transparent url(../../../../img.alimama.cn/images/icon/bag.gif) no-repeat left center;height: 16px;width: 16px;margin: 0 2px 0 0;}
+
+#quick_links li.myalimama a{background-position: right -69px;padding: 0 4px 0 0;}
+#quick_links li.myalimama a span{line-height: 17px;	height: 17px;background-position: left -69px;padding: 0 4px 0 8px;}
+#quick_links li.today, #quick_links li.member, #quick_links li.myalimama{color: #666;border: 0 none;}
+
+
+/*  新的导航  */
+#top_nav_bar ul{margin: 11px 0px 0px 4px;font-size: 14px; _margin-bottom:-11px;}
+#top_nav_bar li{float: left;cursor: pointer;}
+#top_nav_bar li a{background-position: right -95px;padding: 0 5px 0 0;}
+#top_nav_bar li a:link, #top_nav_bar li a:visited{color: #000;}
+#top_nav_bar li a:hover{ text-decoration:none; color:#ff8400;}
+
+#top_nav_bar li a span{	background-position: left -95px;padding: 5px 3px 0 8px;height: 21px;line-height: 20px;	margin: 0 0 0 -1px;}
+#top_nav_bar li a span.qgl{padding-top:2px;height:24px;}
+#top_nav_bar li a span .qglb{padding:0;width:70px; background-position:left -200px;padding-top:2px;margin-top:1px;}
+#top_nav_bar li.first a span{_margin: 0;}
+
+#top_nav_bar li.current a{	background-position: right -128px;}
+#top_nav_bar li.current a:link, #top_nav_bar li.current a:visited{color: #fff;}
+#top_nav_bar li.current a span{background-position: left -128px;}
+
+#top_nav_bar li.separate{margin-left:8px;}
+#top_nav_bar li.down{position:relative;}
+#top_nav_bar li.down i.downi{ float:left; height:11px; width:11px; display:block; background-position:-120px -210px; margin-top:8px;margin-left:-2px;}
+
+
+#top_nav_bar .down_div{ position:absolute; z-index:10;width:120px;top:24px;left:-1px;padding:0; display:none;}
+#top_nav_bar .down_div .down_body{border:1px #ff730f solid; border-bottom-width:0;background-color:#fffbdb;}
+#top_nav_bar .down_div .down_foot{margin:0 5px; height:4px; line-height:0; border-bottom:1px #ff730f solid;background-color:#fffbdb; _overflow:hidden;}
+#top_nav_bar .down_div .down_up{ position:absolute; float:left; left:67px; top:-3px; width:7px; height:4px; overflow:hidden; background-position:-120px -200px; display:block;}
+#top_nav_bar .down_div .down_bl{ position:relative; float:left; left:-5px; bottom:0px; width:5px; height:5px; overflow:hidden; line-height:0; background-position:-100px -200px; display:block;}
+#top_nav_bar .down_div .down_br{ position:relative; float:right; right:-5px; bottom:0px; width:5px; height:5px; line-height:0; background-position:-100px -210px; display:block;}
+#top_nav_bar .down_div ul{margin:0 3px;}
+#top_nav_bar .down_div li{ float:none;padding:5px 0 3px 4px; border-top:1px solid #f4e8a8;}
+#top_nav_bar .down_div li a{float:none;background-image:none; font-size:12px;padding-right:2px;}
+#top_nav_bar .down_div li.downfirst{border-top-width:0;}
+
+#top_nav_bar li.new{position:relative;}
+#top_nav_bar li.new i.newi{display:block;width:28px;height:15px;position:absolute;z-index:10;right:9px;top:-8px; background-position:-200px -200px;}
+
+
+#global_cart{float:right;margin:0 45px 0 0; _margin-top:12px;}
+#global_cart a, #global_cart a span{display:block;float:left;background:transparent url(../../../../img.alimama.cn/images/index/080522/bg/global_cart.gif) no-repeat left top;}
+#global_cart a{background-position:right top;padding:0 7px 0 0;}
+#global_cart a span{height:20px;line-height:20px;padding: 0 0 0 27px;}
+#global_cart a:link, #global_cart a:visited, #global_cart a span{color:#666; cursor:pointer;}
+#global_cart span em{color:#0245DC;font-style:normal;}
+
+#nav_2 .lc,#nav_2 .rc,#nav_2 .cc_body,#nav_2 #nav_ul,#nav_2 #nav_ul li,#nav_2 #nav_ul li a,#nav_2 #nav_ul li.current a:hover{ background-image:url(../../../../img.alimama.cn/images/bg/new_head2.gif); background-repeat:no-repeat;}
+
+#nav_2 .lc{float:left;background-position:left top; width:15px; height:74px; _margin-right:-3px;}
+#nav_2 .rc{float:right;background-position:-20px top; width:15px; height:74px; margin-top:-75px; *margin-top:-74px;}
+#nav_2 .cc_body{background-position:left -80px; background-repeat:repeat-x; height:74px; margin:0;}
+
+.nav_search .search_text,.nav_search .search_a,.nav_search .search_aup,.nav_search .search_div span{ background-image:url(../../../../img.alimama.cn/images/bg/new_head2.gif); background-repeat:no-repeat;}
+.nav_search, #hotword{ margin-left:72px; *margin-left:62px; width:620px;}
+
+
+.nav_search{padding-top:2px;}
+.nav_search .search_div{  float:left; margin:0 2px; position:relative;}
+.nav_search .search_div span{ display:block; height:22px; float:left;}
+.nav_search .search_div .left{ background-position:left -400px; width:13px;}
+.nav_search .search_div .search_select{ background-position:left -430px; background-repeat:repeat-x; width:100px; color:#999999;height:22px; text-align:left; padding-top:4px;*padding-top:6px; overflow:hidden; white-space:nowrap; }
+.nav_search .search_div .dot_right{ background-position:right -460px; width:30px;}
+.nav_search .search_div .right{ background-position:right -400px; width:13px;}
+.nav_search .search_text{ background-color:Transparent;background-position:left -430px; background-repeat:repeat-x; float:left; width:300px; margin:0; padding:5px 0px 0 0px; border:0 none; height:17px; line-height:14px; overflow:hidden; color:#999;}
+.nav_search .search_a{ background-position:left -490px; display:block; float:left; width:72px; height:28px; margin-left:5px; margin-top:-1px;}
+.nav_search .search_aup{ background-position:left -940px; display:block; float:left; width:72px; height:28px; margin-left:5px; margin-top:-1px;}
+#nav_2 .nav_search .super_search{ color:#fffaa2; display:block; float:left; margin:4px 0 0 6px;}
+.nav_search .norelative{position:static;}
+
+#search_select_list .select_body,#search_select_list .select_left,#search_select_list .select_right,#search_select_list li a,#nav_banner_ul a{ background-image:url(../../../../img.alimama.cn/images/bg/new_head2.gif); background-repeat:no-repeat;}
+
+#search_select_list{position:absolute; height:134px; z-index:9999; left:0; top:23px; width:400px; display:none;}
+#search_select_list .select_left{ background-position:left -520px; float:left; display:block; height:134px; width:8px;}
+#search_select_list .select_right{ background-position:right -520px; float:left; display:block; height:134px; width:8px;}
+#search_select_list .select_body{ background-position:left -660px; background-repeat:repeat-x; float:left; width:308px;_width:310px; height:134px; margin-right:-3px;}
+#search_select_list ul{ margin:6px 0px 6px 0;}
+#search_select_list li{ float:left; border-right:1px dotted #d0cebe; width:72px; margin:0px 2px 0 2px;}
+#search_select_list li a{ background-position:7px -823px; color:#666666; display:block; line-height:18px;margin:1px 5px 1px 0; text-align:left; padding-left:12px;}
+#search_select_list li a:hover{ background-position:left -800px; text-decoration:none; color:#000;}
+#search_select_list li a.border{ font-weight:bolder;}
+
+#hotword .hotfirst{ background-image:url(../../../../img.alimama.cn/images/bg/new_head2.gif); background-repeat:no-repeat;}
+
+#hotword .hr{ height:0; font-size:0; line-height:0; border-top:1px solid #eb6c00; border-bottom:1px solid #faae4a; margin:28px 0 2px 0;*margin-top:1px;}
+#hotword li{ float:left; margin:2px 4px; *margin:4px;}
+#hotword .hotfirst{ background-position:right -978px; font-weight:bolder; color:#fffaa2; padding-right:40px;}
+#hotword li a{ color:#fffaa2; white-space:nowrap;}
+#hotword li a:hover{ text-decoration:none;}
+#nav_search_1{ padding-top:10px;}
+.ih_right{ float:right;background:url(../../../../img.alimama.cn/images/index/080522/bg/index_head_right.gif) no-repeat;margin:-69px 18px 0pt 6px;*margin-top:-60px;_margin-right:0px;}
+.ih_right li{ float:left; margin:0 16px 0 0;}
+#nav_2 .ih_right li a{ color:#fffaa2; padding:38px 4px 0 2px; *padding-bottom:4px; _padding-bottom:0;  height:10px; display:block; float:left;}
+/*     head  end         */
+
+
+
+
+#main{ margin:auto; width:950px; }
+
+.categories_left{ float:left; width:690px; margin-right:10px;}
+.club_body{ float:right; width:242px; padding:4px;}
+
+/* neck & shoulders background define */
+
+.site-tools h3 .more i, .right .site-tools, .sanbao .intro li i, .right .sanbao, .tigger .rec-price li i, .dragon .rec-cps .tao, .dragon .rec-cps li i, .dragon .rec-zones li i, .dragon .rec-zones h3 i, .dragon .rec-zones h3, .rec-wrapper .zones li, .super-rec .points li, .shoulders .left, #neck .new-trans, .pb .steps, .pb .points li, .pb .switcher, .rbutton, .rbutton span, .ann .anns li i, .round-title .more i, .round-title i, .round-title{background:transparent url(../../../../img.alimama.cn/images/index/080522/bg/index_neck_shoulders.png) no-repeat left top;}
+
+/* end of bg define */
+
+/* neck & shoulders common define */
+
+.orange{color:#F86C00;}
+#main i{overflow:hidden;}
+.right-hot{float:right;display:block;width:17px;height:11px;background:transparent url(../../../../img.alimama.cn/images/index/080522/icon/hot.gif) no-repeat left top;}
+.rbutton, .rbutton span{display:block;float:left;}
+.rbutton{background-position:right -46px;padding:0 14px 0 0;}
+.rbutton span{background-position:left -46px;height:24px;line-height:24px;padding:0 0 0 14px; cursor:pointer;}
+.rbutton .right-hot{margin:6px 0 0 3px;}
+.rbutton:link, .rbutton:visited{color:#CA731F;}
+.rhot_button{ width:96px; _width:100px;}
+
+/* end of ns common define */
+
+/* neck (nowa 2008-05-19) */
+
+/*#neck{border-bottom: 1px solid red;}*/
+.round-title{background-repeat:repeat-x;background-position:left -10px;line-height:33px;font-size:14px;font-weight:bold;}
+.round-title i{display:block;float:left;background-position:left top;width:7px;height:7px;margin:12px 6px 0 0;}
+.round-title .more{float:right;margin:-33px 17px 0 0;font-weight:normal;font-size:12px;}
+
+.round-title .more i{ float:right;display:block;width:3px;height:5px;background-position:-10px top;float:right;margin:13px 0 0 3px;}
+.round-title .more a{ float:right;}
+#neck{overflow:hidden;margin-top:10px;}
+
+#neck .ann{width:279px;overflow:hidden;float:left;}
+.ann .pic{float:left;margin:2px 10px 0 0;}
+.ann .anns{width:182px;float:left;overflow:hidden;}
+.ann .anns li{line-height:20px;}
+.ann .anns li.hot a:link,  .ann .anns li.hot a:visited{color:#ff8400;}
+.dragon .rec-cps li i, .dragon .rec-zones li i, .ann .anns li i{display:block;width:2px;height:3px;background-position:-15px top;margin:8px 4px 0 0;float:left;}
+.more-ann{margin:8px 0 0 4px;}
+.more-ann li{float:left;margin:0 3px 0 0;}
+
+#neck .promotion{float:left;margin:0 0 0 10px;width:401px;overflow:hidden;}
+.pb .banners{float:left;}
+.pb .banners li{width:377px;height:120px;overflow:hidden;display:none;}
+.pb .banners li.current{display:block;}
+.pb .switcher{float:left;height:120px;width:24px;background-position:left -76px; position:relative;}
+.pb .points{width:19px;margin:4px auto 0;}
+.pb .points li{width:16px;height:15px;background-position:-26px -76px;overflow:hidden;text-align:center;line-height:15px;margin:0 0 2px 3px;color:#fff;cursor:pointer; font-family:Arial;}
+.pb .points li.current{width:19px;background-position:-45px -76px;margin-left:0; text-align:center; text-indent:3px;}
+.pb .steps{width:16px;height:23px;background-position:-26px -93px;margin:0px 0 0 5px; position:absolute; bottom:3px; _overflow:hidden;}
+.pb .steps .up, .pb .steps .down{width:15px;height:11px;cursor:pointer;}
+.promotion .more-promotion{margin:8px 0 0 -1px;}
+.promotion .more-promotion li{float:left;padding:0 11px;border-left:1px solid #DDD;}
+.promotion .more-promotion li .right-hot{margin:1px 0 0 3px;}
+.promotion_hot{ width:68px; _width:76px;}
+
+
+
+.sellsite li,.sellsite .ss_li i{background:transparent url(../../../../img.alimama.cn/images/bg/0806/index_left_bg.gif) no-repeat left top;}
+.sellsite{ float:right;width:245px;padding-right:4px;}
+.sellsite li a,.sellsite li.ss_li a{color:#B6470A;}
+.sellsite li a:hover{ color:#ff8400;}
+.sellsite .ss_first{ height:31px;*margin-bottom:-3px;}
+.sellsite .ss_first a,.sellsite .ss_first a:hover{ float:right; display:block;margin:8px 25px 0 0; color:#ffe8b5;*margin-top:10px; _margin:10px 13px 0 0 ;}
+.sellsite .ss_li{margin-top:1px; background-position:left -50px; height:29px; line-height:28px; color:#b6470a;}
+.sellsite .ss_li i{ display:block; width:18px; height:20px; background-position:left -100px; margin:4px 10px 0 44px;_margin-left:23px; float:left;}
+.sellsite .ss_li i.num2{ background-position:-50px -100px;}
+.sellsite .ss_li i.num3{ background-position:-100px -100px;}
+.sellsite .ss_last{ height:28px; background-position:left -130px; line-height:27px;padding-left:10px; color:#b6470a;}
+.sellsite .ss_last a.sell,.sellsite .ss_last a.sell:hover{ float:right;margin:-22px 24px 0 0 ; color:#fff; line-height:18px;}
+.sellsite .ss_roll_div{ height:27px;}
+.sellsite .ss_roll_div ul{ height:27px;width:140px; overflow:hidden;}
+.sellsite .ss_roll_div li{ background-image:none;}
+/* end of neck */
+
+
+/*   lianbo   */
+.lb_top1,.lb_top3,.lb_top_a,.lb_top_new,.lb_top_dl dd,.ltopex_title li,.ltopex_body,.lianbo_bottom1,.lianbo .br,.ltopex_body .lt_extend_a{ background-image: url(../../../../img.alimama.cn/images/bg/0806/index_lianbo_bg.gif); background-repeat:no-repeat;}
+
+.lianbo{ margin:6px auto 10px;*margin-top:0; position:relative;*height:1%;}
+.lianbo_top{}
+.lb_top1{ float:left; height:169px; width:500px; background-position:left top; position:relative;}
+.lb_top1 .lianbo_link{ position:absolute; width:280px; height:150px; top:10px; left:6px; display:block;}
+.lb_top_dl{ margin:90px 0 0 300px; color:#285593;}
+.lb_top_dl dt{ font-weight:bold; line-height:22px;padding-bottom:2px;}
+.lb_top_dl dd{ float:left; width:70px; line-height:20px; background-position:-198px -394px; padding-left:14px;}
+.lb_top_dl dd a:link,.lb_top_dl dd a:visited{ color:#285593;}
+
+.lb_top3{ float:right; width:10px; overflow:hidden; height:169px; background-position:right -200px;}
+.lb_top2{ height:167px;padding-top:1px; float:left; width:440px; border-top:solid 1px #dbeaff;}
+.lb_top2b{ background-color:#eff5fc; height:137px;padding-top:30px;}
+.lb_top_a{ margin:0px 0 0 20px; background-position:left -300px; display:block; width:138px; height:28px;}
+.lb_top_new{ background-position:left -200px; width:194px; height:79px;padding:3px 0 0 3px; margin:23px 0pt 0pt 2px;}
+.lb_top_new img{ float:left;}
+.lb_top_new p{ padding:10px 0 0 8px; float:left; color:#285593; height:42px;}
+.lb_top_new a.lb_top_newa{ float: left; margin:1px 0pt 0pt 11px;*margin-top:3px; padding-right:18px; color:#285593; white-space:nowrap;}
+
+.lb_top_extend{ float:right; width:238px; height:150px; margin-top:-156px;_margin-top:-157px;}
+.ltopex_title li{position:relative; float:left; width:105px; text-align:center; cursor:pointer; background-position:left -350px; height:25px;_height:26px; border-bottom:solid 1px #9ab9dc;margin-right:4px; line-height:24px; color:#fff;}
+.ltopex_title li.current{ font-weight:bold; color:#285593; background-position:-200px -350px;border-bottom-color:transparent;_border-bottom-width:0;padding-top:4px; height:21px; *height:22px; _height:26px; line-height:22px; _overflow:hidden;}
+.ltopex_body{ background-position:-200px -200px; height:125px;padding-top:5px; margin-top:25px;*margin-top:-2px;_margin-top:-4px;width:238px; text-align:center; z-index:2;}
+.ltopex_body li{ display:none;}
+.ltopex_body li.current{display:block;}
+.ltopex_body .lt_extend_a{ float:right; margin:0px 20px 0 0; padding-right:16px; background-position:right -400px;}
+
+
+.lianbo_bottom1{ height:44px; width:35px; overflow:hidden; float:left; background-position:left -420px; font-weight:bold; color:#3f87d6; padding:13px 5px 0 13px; line-height:17px;}
+.lianbo_bottom2{ height:56px; border:solid #dbeaff; border-width:0 1px 1px 0;}
+.lianbo .br{ position:absolute; right:0px; bottom:0px; height:8px; width:8px; overflow:hidden; background-position:-100px -400px;}
+.buyer_scroll{ margin:14px 6px 0 6px; _margin:14px 2px 0 2px;}
+.buy_ok_ul{ height:54px; width:850px;overflow:hidden;}
+.buy_ok_ul ul{ width:1100px;}
+.buy_ok_ul li{ float:left; padding:0 1px; margin:12px 2px; border-right:solid 1px #e3eaee; width:100px; text-align:center;}
+
+
+/* shoulders (nowa 2008-05-20) */
+
+.shoulders{height:260px;overflow:hidden;margin:7px 0;}
+.shoulders .left{float:left;width:279px;height:260px;overflow:hidden;background-position:left -220px;}
+.shoulders .left .super-rec{margin:0 7px 0 11px;}
+.super-rec h3{color:#D91000;margin:8px 0 0 30px;_margin-left:15px; float:left;font-size:14px;}
+.super-rec h3 a:link, .super-rec h3 a:visited, .super-rec h3 a:hover{color:#D91000;}
+.super-rec .points{float:right;margin:7px 0 0 0;}
+.super-rec .points li{float:left;width:16px;height:15px;cursor:pointer; background-position:-26px -76px;overflow:hidden;text-align:center;color:#fff;margin-right:3px;line-height:15px;}
+.super-rec .points li.current{height:18px;background-position:-70px -76px;}
+.super-rec .rec-wrapper{margin:15px 0 0 0;*margin-top:0;}
+.super-rec .rec-wrapper li.items{display:none;}
+.super-rec .rec-wrapper li.current{display:block;}
+.rec-wrapper .zones li{cursor:pointer;float:left;background-position:left -782px;width:83px;text-align:center;margin:0 4px 8px 0;height:102px;overflow:hidden;}
+.rec-wrapper .zones li .pic{margin:3px 2px 7px 0px; text-align:center;}
+.rec-wrapper .zones li.hover{background-position:-100px -782px;}
+.rec-wrapper .zones li.hover a:link, .rec-wrapper .zones li.hover a:visited{color:#F86C00;}
+.shoulders .cross{float:left;margin:0 0 0 9px;width:400px;}
+.shoulders .right{float:right;width:250px;}
+.cross .dragon{float:left;width:229px;overflow:hidden;}
+.dragon .rec-zones h3{background-position:left -488px;height:22px;overflow:hidden;font-size:12px;color:#F86C00;line-height:22px;}
+.dragon .rec-zones h3 i{display:block;width:23px;height:22px;overflow:hidden;float:left;margin:0 5px 0 0;background-position:left -488px;}
+.dragon .cpc h3 i{background-position:-232px -488px;}
+.dragon .rec-zones h3 .more{float:right;margin:-22px 13px 0 0;}
+.dragon .rec-zones ul{margin:3px 0 6px 10px;}
+.dragon .rec-zones li{line-height:18px;}
+.dragon .rec-cps{border-top:1px solid #E4E1DF;padding-top:3px; position:relative; overflow:hidden;}
+.dragon .rec-cps .tao{background-position:-257px -488px;position:absolute;width:23px;height:22px;top:3px;left:0; z-index:100;}
+.dragon .rec-cps .pic{float:left;width:66px;overflow:hidden;}
+.dragon .rec-cps ul{float:left;margin:3px 0 0 6px;width:156px;}
+.dragon .rec-cps li{line-height:17px;}
+.cross .tigger{float:right;width:161px;overflow:hidden;border-left:1px dotted #CECECE;}
+.tigger .round-title{line-height:30px;background-position:left -13px;padding:0 0 0 3px;}
+.tigger .round-title i{margin-top:11px;}
+.tigger .round-title .more{margin:-30px 10px 0 0;}
+.tigger .rec-price{border-bottom:1px solid #E9B294;height:22px;line-height:22px;overflow:hidden;margin-left:1px;}
+.tigger .rec-price li{float:left;margin:0 3px 0 2px;}
+.tigger .rec-price li i{display:block;float:left;width:2px;height:4px;overflow:hidden;background-position:-20px top;margin:9px 3px 0 0;}
+.tigger .crazy-buy{height:141px;overflow:hidden;}
+.tigger .crazy-buy li{height:23px;*margin-top:-3px; overflow:hidden;line-height:21px;border-bottom:1px dotted #E9B294;cursor:pointer;}
+.tigger .crazy-buy li .title{float:left;margin:0 0 0 5px;width:100px;overflow:hidden; padding-top:2px;}
+.tigger .crazy-buy li .price{float:right;color:#F86C00;}
+.tigger .crazy-buy li.hover{background-color:#FFF6E4;}
+.tigger .p160x65{margin:1px 0 0 1px;}
+
+
+.right .sanbao{background-position:left -518px;overflow:hidden;height:140px;}
+.sanbao_top{ *height:64px;_overflow:hidden;}
+.sanbao .intro{margin:39px 0 0 16px;}
+.sanbao .intro li{float:left;line-height:23px;margin:0 10px 0 0;}
+.sanbao .intro li i{display:block;width:8px;height:9px;float:left;background-position:-30px top;margin:7px 3px 0 0; _margin-right:0;}
+.sanbao .pic{float:left;margin:5px 10px 0 9px;}
+.sanbao .case{line-height:19px;margin:0;padding:0px; float:left; width:136px;_width:135px;height:67px;overflow:hidden;color:#357BBB;}
+.right .site-tools{background-position:left -663px;height:116px;margin:4px 0 0 0;}
+.site-tools h3{color:#fff;font-size:14px;line-height:30px;text-indent:32px;}
+.site-tools h3 .more{font-size:12px;float:right;margin:-30px 3px 0 0;width:70px;}
+.site-tools h3 .more a{ float:left;text-indent:0;}
+.site-tools h3 .more a:link, .site-tools h3 .more a:visited{color:#fff;}
+.site-tools h3 .more i{display:block;float:left;background-position:-50px top;width:11px;height:10px;margin:9px 3px 0 0;}
+.site-tools .alexa{margin:6px 12px 0;}
+.site-tools .alexa .search{cursor:pointer;display:block;float:right;width:50px;height:23px;margin:-22px -1px 0 0; background-color:transparent; border-width:0;}
+.alexa .search span{display:none;}
+.site-tools .wrapper .more{margin:7px 4px 0;}
+.site-tools .wrapper .more li{float:left;width:75px;text-align:center;line-height:24px;}
+.site-tools .wrapper .more a:link, .site-tools .wrapper .more a:visited{color:#357BBB;}
+.site-tools .wrapper .more .hot a:link, .site-tools .wrapper .more .hot a:visited{color:#F86C00;}
+.site-tools .wrapper .more li.last{ padding-left:6px;}
+
+/* end of shoulders */
+
+
+
+/*    category     */
+
+.categories .cg_top,.categories .cg_tr,.categories .cg_tb,.categories .cg_bottom,.categories .cg_br,
+.bg_a .tl,.bg_a .tr,.bg_a .bl,.bg_a .br,.bg_b .tl,.bg_b .tr,.bg_b .bl,.bg_b .br,.bg_c .tl,.bg_c .tr,.bg_c .bl,.bg_c .br,.bg_d .tl,.bg_d .tr,.bg_d .bl,.bg_d .br,.bg_e .tl,.bg_e .tr,.bg_e .bl,.bg_e .br,.bg_e .top,
+.star_order,.star_order .star_ul li.current,.club_hot,.collaborate,.site_info dt{ background-image:url(../../../../img.alimama.cn/images/index/080522/bg/index_bg2.gif);background-repeat:no-repeat; background-position:100px 100px;}
+
+.categories .cg_ul_link li a,.category dt,.category dd a:hover,.bargain,.scroll_left,.scroll_right,.star_body i,.more_a_red,.club_ul li,.club_a_more,.collaborate li{background-image:url(../../../../img.alimama.cn/images/index/080522/icon/index_icon_bg.gif); background-repeat:no-repeat; background-position:100px 100px;}
+
+.more_a_red{ background-position:26px -86px; padding-right:6px;  float:right; margin:-20px 10px 0 0;}
+
+
+.categories .cg_bottom{ background-position:left -44px; padding-left:10px; height:6px; line-height:0; font-size:0;}
+.categories .cg_br{ background-position:right -44px; padding-right:10px; height:6px; line-height:0; font-size:0;}
+.categories .cg_bb{height:4px; line-height:0; font-size:0; border-bottom:solid 2px #f86c00; background-color:#fff;}
+.categories .cg_body{ border:solid #f86c00; border-width:0 2px; height:540px; position:relative;_margin-top:-4px;}
+
+
+.categories .cg_ul_link{margin:10px 0px 0 92px; }
+.categories .cg_ul_link li{margin:4px 0px;width:90px;}
+.categories .cg_ul_link li a{ display:block; background-position:left 2px; padding-left:16px; line-height:18px; font-size:14px;}
+.categories .cg_ul_link li a:hover{ background-position:left -23px;}
+
+
+.category {}
+.category li{ float:left; border-right:dotted 1px #d6d6d6; border-bottom:solid 1px #ebeced; padding:10px 3px 0px 3px; width:91px;}
+.category li.onmouse{ background-color:#f2f4f5;}
+.category dt{ background-position:4px -42px; }
+.category dt a{ font-weight:bold; font-size:14px; padding-left:12px; line-height:22px;}
+.category dd a{ display:block; padding-left:12px; line-height:18px;}
+.category dd a.hover{color:#FF8400;}
+.category dd a:hover{ background-position:5px -84px;}
+
+.categories .category_li1{ height:194px; overflow:hidden;}
+.categories .category_li2{ height:122px; overflow:hidden;}
+.categories .category_li3{ height:104px; overflow:hidden;}
+
+.cg_order{ padding:10px 8px; *padding-top:6px;_padding-top:10px; _width:670px; overflow:hidden;}
+.cg_order li{ float:left; width:222px;}
+.cg_order dt{ font-size:14px; font-weight:bold; line-height:20px;}
+.cg_order dt.img_dt{ float:left; width:45px; height:68px; padding-right:4px;}
+.cg_order dt.img_dt img{ width:44px; height:66px;}
+.cg_order dd{ float:left; margin-right:14px; padding:2px 0;}
+
+
+/*   覆盖原来的。    */
+.categories .cg_top_cpc,.categories .cg_tr,.cg_top_cpc .buy_cpc_sub,.cg_body .cg_btl{background-image:url(../../../../img.alimama.cn/images/bg/0806/index_left_bg.gif);background-repeat:no-repeat; }
+.categories .cg_top{ padding-left:0px; height:56px;}
+.categories .cg_top_cpc{background-position:left -180px;height:54px; float:left; background-color:#fff2e1; width:500px; border-bottom:2px solid #f8750f;}
+.categories .cg_tr{ background-position:-100px -260px; height:56px; float:right; width:190px;}
+.cg_top_cpc ul{ padding:30px 0 0 180px;}
+.cg_top_cpc li{ float:left; margin-right:14px;}
+.cg_top_cpc input{ width:40px;}
+.cg_top_cpc .buy_cpc_sub{ background-position:left -260px; width:49px; height:22px; margin-top:-2px;*margin-top:0; border-width:0; cursor:pointer;}
+.cg_body .cg_btl{ position:absolute; width:6px; height:6px; overflow:hidden;background-position:-100px -260px; left:-2px; top:-2px;}
+
+/*    bg    */
+.bg_a{ position:relative;  background-color:#eff1f3;}
+.bg_a .tl,.bg_a .tr,.bg_a .bl,.bg_a .br{ height:4px; width:4px; position:absolute; line-height:0; font-size:0; overflow:hidden;}
+.bg_a .tl{ background-position:left -110px; left:0; top:0;}
+.bg_a .tr{ background-position:right -110px; right:0; top:0;}
+.bg_a .bl{ background-position:left -121px;left:0; bottom:0;}
+.bg_a .br{ background-position:right -121px; right:0; bottom:0;}
+
+.bg_b{ position:relative;  background-color:#fff; padding:4px;}
+.bg_b .tl,.bg_b .tr,.bg_b .bl,.bg_b .br{ height:3px; width:3px; position:absolute; line-height:0; font-size:0; overflow:hidden;}
+.bg_b .tl{ background-position:left -130px; left:-1px; top:-1px;}
+.bg_b .tr{ background-position:right -130px;right:-1px; top:-1px;}
+.bg_b .bl{ background-position:left -135px; left:-1px; bottom:-1px;}
+.bg_b .br{ background-position:right -135px; right:-1px; bottom:-1px;}
+
+.bg_c{ position:relative;  background-color:#fff; padding:4px; border:solid 2px #f86c00;}
+.bg_c .tl,.bg_b .tr,.bg_b .bl,.bg_b .br{ height:4px; width:4px; position:absolute; line-height:0; font-size:0; overflow:hidden;}
+.bg_c .tl{ background-position:left -150px; left:-2px; top:-2px;}
+.bg_c .tr{ background-position:right -150px; right:-2px; top:-2px;}
+.bg_c .bl{ background-position:left -155px;left:-2px; bottom:-2px;}
+.bg_c .br{ background-position:right -155px; right:-2px; bottom:-2px;}
+
+.bg_d{ position:relative;  background-color:#eff5fc;}
+.bg_d .tl,.bg_d .tr,.bg_d .bl,.bg_d .br{ height:5px; width:5px;  position:absolute;line-height:0; font-size:0; overflow:hidden;}
+.bg_d .tl{ background-position:left -190px; left:0; top:0;}
+.bg_d .tr{ background-position:right -190px; right:0; top:0;}
+.bg_d .bl{ background-position:left -195px;left:0; bottom:0;}
+.bg_d .br{ background-position:right -195px;right:0; bottom:0;}
+
+.bg_e{ position:relative;  background-color:#fff; border:solid 1px #bfcfde; margin:4px auto;}
+.bg_e .top{ background-position:left -250px; position:relative; background-repeat:repeat-x; font-size:14px; color:#004f98; height:24px; line-height:23px; padding-top:4px; padding-left:16px; font-weight:bold;}
+.bg_e .tl,.bg_e .tr,.bg_e .bl,.bg_e .br{ height:4px; width:4px; position:absolute; line-height:0; font-size:0; overflow:hidden;}
+.bg_e .tl{ background-position:left -240px; left:-1px; top:-1px;}
+.bg_e .tr{ background-position:right -240px; right:-1px; top:-1px;}
+.bg_e .bl{ background-position:left -245px; left:-1px; bottom:-1px;}
+.bg_e .br{ background-position:right -245px; right:-1px; bottom:-1px;}
+
+
+
+/*   scroll   */
+a.scroll_left{ display:block; background-position:left -165px; width:10px; height:32px; float:left;}
+a.scroll_right{display:block;  background-position:-25px -165px; width:10px; height:32px; float:right;}
+a.scroll_left:hover{ background-position:left -200px;}
+a.scroll_right:hover{ background-position:-25px -200px;}
+
+
+
+
+/*    站长信息        */
+.site_info{ margin:0 0 0 10px; float:left; width:400px; overflow:hidden;}
+.site_info li{ float:left; padding:10px; width:180px;}
+.site_info li.bottom_order{ border-bottom:solid 1px #fddcc2;}
+.site_info dt{ background-position:left -290px; float:left; width: 22px; height:72px; text-align:center; color:#fff; padding-top:12px;}
+.site_info dd{ margin:7px 0 0px 6px;*margin:8px 0 0px 26px; overflow:hidden; white-space:nowrap; width:150px;}
+
+
+/*    社区    */
+
+.club_body a:link,.club_body a:visited{color:#347aba;}
+.club_body a:hover{ color:#ff8400; text-decoration:underline;}
+.club_body  .club_a_more{  background-position:right -236px; float:right; font-size:12px; font-weight:normal; margin:-20px 10px 0 0; padding-right:5px; line-height:16px;}
+.club_body  a.club_a_more:hover{background-position:right -256px;}
+
+
+.club_ul li{ background-position:4px -61px; padding:2px 0 2px 10px; line-height:18px; white-space:nowrap; overflow:hidden; text-align:left;_width:216px;}
+.club_small_ul li{_width:132px;}
+
+.club_hot{ background-position:left -205px; font-size:14px; padding:2px 0 10px 40px; margin:4px 0 0  10px; color:#004f98;}
+.club_hot_ul{ margin:2px 8px; margin-bottom:12px;}
+.club_hot_ul li{ float:left; width:100px;}
+
+.bg_e_body{ padding:6px; overflow:hidden; text-align:center;}
+.club_leftdt{ float:left; margin:4px 0px 0 0;padding:4px; height:96px; width:70px; overflow:hidden; text-align:center;}
+.club_leftdt img{ *padding-bottom:6px;}
+.bg_e_body dd{ margin-left:80px; border-left:dotted 1px #c4c4c4; }
+
+
+/*     设置社区id的高度        */
+.club_hot_id{ padding-bottom:2px; height:100px; overflow:hidden;}
+.club_pocket_id{ height:150px;}
+.club_active_id{ height:130px;}
+.club_lief_id{ height:198px; _height:202px;}
+.club_pocket_id2{ height:170px; margin-top:10px;}
+.club_ad_id{ margin-top:10px;}
+
+
+
+/*          合作伙伴           */
+.collaborate_buyer{padding:4px; margin-top:10px;_height:126px;}
+
+#main .collaborate li a{ color:#0075b9;}
+#main .collaborate li a:hover{ color:#ff8400;}
+
+.collaborate{ background-position:10px -406px; margin:10px; padding:10px 0 0 220px; _height:90px;}
+.collaborate li{ background-position:left -273px; float:left; padding:2px 10px 2px 6px; width:100px; line-height:16px; overflow:hidden; white-space:nowrap;}
+
+
+
+/*   footer   */
+#footer{margin: 16px auto;padding: 1px 0pt 0pt;text-align: center;
+	background: transparent url(../../../../img.alimama.cn/cms/images/1201241189007.png) repeat-x;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="http://img.alimama.cn/cms/images/1199944129517.png");
+	_background:none;
+	width: 100%;clear: both;
+}
+
+#footer ul.bottom-nav, #footer ul.ali-family{display: block;	height: 20px;margin: 15px auto 0pt;width: 360px;*width: 370px;}
+#footer ul li a{position:relative; padding:0px; margin:0px; line-height:16px;}
+#footer ul.bottom-nav{_margin: 25px auto 0pt;font-size: 13px;}
+#footer ul.ali-family{width: 710px;	_width: 740px;margin: 15px auto 5px;}
+#footer ul.bottom-nav li, #footer ul.ali-family li{display: block;float: left;margin: 0pt 7px;}
+#footer a:link, #footer a:visited{text-decoration: none;}
+#footer a:hover{text-decoration: underline;}
+#footer .copyright a.icp{margin:0 10px;}
+#footer .copyright a:link, #footer .copyright a:visited{text-decoration: none;}
+
+#ServerNum { color:#FFFFFF;font-family:arial;font-size:9px;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;text-align:center;}
+
+
+
+/*  safari      */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    #top_nav_bar .first span{position:relative;}
+    .categories .cg_ul_link{ margin-top:10px;}
+    .bargain_body dd span{ margin-top:0px;}
+    .club_body .club_a_more{ margin-top:4px;}
+    .star_body .star_com{margin-top:0;}
+}
+
+/*  ie 8   */
+/*/
+.categories .cg_ul_link{ margin-top:10px;}
+.bargain_body dd span{ margin-top:0px;}
+.club_body .club_a_more{ margin-top:4px;}
+.star_body .star_com{margin-top:0;}
+/*/
+
+

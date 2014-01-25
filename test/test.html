@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script src="../common/jQuery/1_3_2/jquery-1.3.2-vsdoc.js" type="text/javascript" charset="gb2312"></script>
+<script src="../common/jQuery/1_3_2/jquery-1.3.2.js" type="text/javascript" charset="gb2312"></script>
+</head>
+<body>
+<div id="idTest">
+ <p>123</p>
+</div>
+<form id="form1" action="test.aspx">
+ <table width="200" cellpadding="3" cellspacing="2">
+  <tr>
+   <th>title</th>
+   <th width="50" align="center">oper</th>
+  </tr>
+  <tr>
+   <td id="KeyId" class="title">123</td>
+   <td align="center" class="title"><a id="idDel" href="javascript:msg(this);" class="del">del</a></td>
+  </tr>
+  <tr>
+   <td id="KeyId" class="title">456</td>
+   <td align="center"><a id="idDel" href="javascript:msg(this);" class="del">del</a></td>
+  </tr>
+ </table>
+ <input type="text" name="KeyId" id="KeyId" />
+ <br />
+ <input type="submit" name="submit" id="submit" value="提交" />
+ <input type="button" name="submit" id="button1" value="按钮" />
+</form>
+<p> 1234567489 </p>
+<br />
+<br />
+<br />
+<input id="idTest2" type="text" value="some text"/>
+<script type="text/javascript">
+
+//var obj= $("#idTest");
+//alert(obj.innerHTML);
+//alert($("#idTest2").val());
+/*
+alert($("#idTest").html());
+var obj = document.getElementById("idTest");
+alert(obj.innerHTML);
+*/
+
+/*
+function handler(event) {
+  alert(event.data.foo);
+}
+
+$("#button1").bind("click", {foo: "bar"}, handler)
+
+function submitPost(event) {
+  alert(event.data.foo);
+}
+$("#submit").bind("click", {foo: "bar"}, submitPost)
+*/
+
+
+
+function msg(obj)
+{
+/*	alert(obj.innerHTML);*/
+alert("ok");
+}
+
+
+function alert2()
+{
+//	var obj = ;
+	var obj = $(this);
+	
+//	return window.confirm("确定吗?" + $(this).parent("#KeyId").html());
+//	alert($(this).parent().parent().children(".title").html());
+//	return window.confirm("确定吗?" + $(this).parent().parent().parent().parent("#KeyId").html());
+//	return alert(obj.html());
+/*	alert($(this).innerHTML);*/
+	var aryList =  $(this).parent().parent().children(".title");
+	alert(aryList.length)
+	if (aryList.length>0)
+	{
+		var strMsg = aryList.get(0).html();
+		strMsg = "确定吗 [" + strMsg  + "]";
+		return window.confirm(strMsg);
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function init2()
+{
+	$(".del").bind("click", alert2)
+	}
+
+init2();
+/*
+$("p").bind("click", function(){
+  alert( $(this).text() );
+});
+*/
+
+//$("form1").bind("submit", function() { return false; })
+
+</script>
+</body>
+</html>

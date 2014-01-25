@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+	padding: 0px;
+	margin: 0px;
+}
+
+a { color: #1B3041; text-decoration: none;}
+
+a:hover { text-decoration: underline; }
+
+
+.menuBlock {
+	float: left;
+	width: 200px;
+	background-color: #F7F9FD;
+	height: 100%;
+	background-image: url(../images/lmenu_bg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-right: 1px solid #C8D0DD;
+	padding-top: 5px;
+}
+
+.menuBlock span.n1menu_open{
+	font-size: 12px;
+	background-image: url(../images/n1menu_open.gif);
+	background-repeat: no-repeat;
+	height: 29px;
+	line-height: 29px;
+	overflow:hidden;
+	text-indent: 33px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.menuBlock span.n1menu_close{
+	font-size: 12px;
+	background-image: url(../images/n1menu_close.gif);
+	background-repeat: no-repeat;
+	height: 29px;
+	line-height: 29px;
+	text-indent: 33px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+
+.menuBlock a.n1menu_open:link, .menuBlock a.n1menu_open:visited{
+	font-size: 12px;
+	background-image: url(../images/n1menu_open.gif);
+	background-repeat: no-repeat;
+	height: 29px;
+	line-height: 29px;
+	text-indent: 33px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.menuBlock a.n1menu_close:link, .menuBlock a.n1menu_close:visited{
+	font-size: 12px;
+	background-image: url(../images/n1menu_close.gif);
+	background-repeat: no-repeat;
+	height: 29px;
+	line-height: 29px;
+	text-indent: 33px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+.menuBlock a.n2menu_on:link, .menuBlock a.n2menu_on:visited{
+	font-size: 12px;
+	background-image: url(../images/n2menu_on.gif);
+	background-repeat: no-repeat;
+	height: 24px;
+	line-height: 24px;
+	text-indent: 49px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+
+.menuBlock a.n2menu_off:link, .menuBlock a.n2menu_off:visited{
+	font-size: 12px;
+	background-image: url(../images/n2menu_off.gif);
+	background-repeat: no-repeat;
+	height: 24px;
+	line-height: 24px;
+	text-indent: 49px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+

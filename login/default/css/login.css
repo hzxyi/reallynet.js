@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	color: #837669;
+	height:100%;
+	font-family:"Courier New", Courier, monospace;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-weight: normal;
+	color: #6D5A46;
+}
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 26px; }
+
+h3 { }
+
+p {
+	margin-top: 0;
+	line-height: 240%;
+	font-size: 12px;
+	font-family:"Courier New", Courier, monospace;
+}
+
+ul, ol { 
+	list-style-type:none;
+/*	text-indent:-30px;*/
+}
+
+
+blockquote { }
+
+a { color: #1B3041; text-decoration: none;}
+
+a:hover { text-decoration: underline; }
+
+a img {	border: none;}
+
+img { border: none;}
+
+hr { display: none; }
+
+.clean_both {clear:both;}
+
+
+#login { background-image: url(../images/login_bg.gif); background-repeat: repeat-x; background-color: #cdd3df; width: 100%; height: 100%; color: #666; }
+
+.login_bg .login_left { float: left; padding-top: 188px; padding-left: 211px; }
+
+.login_bg .login_right { float: right; width: 417px; height: 300px; font-family: Arial, Helvetica, sans-serif; }
+
+.login_bg .title_pic { height:41px; line-height:41px; display:block; }
+
+.login_left .login_link { float: left; padding-top: 52px; padding-left: 31px; font-weight: bold; font-size: 14px; }
+
+.login_left .login_prompt { line-height: 21px; }
+
+.login_right .pass_input { padding-left: 49px; padding-top: 10px; vertical-align:bottom; clear:both; }
+
+.login_right .pass_input img{ padding:0px; margin:0px;}
+
+.login_right .submit_btn { padding-left: 103px; padding-top: 16px; }
+
+.login_right .title_font { font-size: 14px; font-weight: bold; color: #333; padding-top: 147px; font-family:"Courier New", Courier, monospace; }
+
+.login_right .user_input { padding-left: 49px; padding-top: 10px; }
+
+
+#login .login_bg{ background-image: url(../images/login_bg.png); width: 957px; height: 553px; margin: 0 auto; background-repeat: no-repeat; }
+
+
+/*bottom */
+.submitButtom{
+	background-image: url(../images/btn_bg.gif);
+	background-repeat:no-repeat;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	width:74px;
+	height:24px;
+	line-height:24px;
+	cursor:pointer;
+	font-size:12px;
+	font-family:"Courier New", Courier, monospace;
+}

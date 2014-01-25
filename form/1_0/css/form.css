@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+.formBlock{
+overflow: auto;
+}
+.formBlock .table{
+	background-color:#fafbff;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #c9dbff;
+	border-bottom-color: #c9dbff;
+	border-left-color: #c9dbff;
+	padding:20px;
+/*	line-height:24px;*/
+	color:#333;
+	width:100%;
+	margin:0px auto;
+	
+}
+
+.formBlock h2.titlebarMode1 {
+	height:30px;
+	line-height:30px;
+	background-image:url(../images/content/form_title_bg.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+	width:100%;
+	text-align:left;
+	text-indent:2em;
+}
+
+.formBlock .table th {
+text-align:right;
+width:150px;
+font-size:14px;
+}
+
+.formBlock .table td {
+text-align:left;
+}
+
+
+.formBlock .table .buttonBar{
+text-align:center;
+padding:10px 0px;
+}
+
+/*input*/
+.formBlock .table input{
+font-size:14px;
+font-family:"Courier New", Courier, monospace;
+}
+
+.formBlock .table input.title{
+width:30em;
+}
+
+.formBlock .table input.long{
+width:90%;
+}
+
+.formBlock .table input.input{
+width:20em;
+}
+
+.formBlock .table textarea{
+width:100%;
+font-size: 14px;
+}
+
+.formBlock .table select{
+font-size:14px;
+font-family:"Courier New", Courier, monospace;
+}
+
+
